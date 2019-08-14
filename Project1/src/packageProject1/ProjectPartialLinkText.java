@@ -14,8 +14,10 @@ public class ProjectPartialLinkText {
 		driver.findElement(By.partialLinkText("Inside")).click();
 		System.out.println(driver.getTitle());
 		driver.navigate().back();
+		
 		driver.findElement(By.partialLinkText("Outside")).click();
 		System.out.println(driver.getTitle());
+		
 		driver.quit();	
 	}
 

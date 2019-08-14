@@ -21,7 +21,7 @@ public class ProjectImage {
         } else {			
             System.out.println("We are NOT in Facebook's homepage");					
         }		
-				driver.close();	
+			driver.close();	
 
 	}
 

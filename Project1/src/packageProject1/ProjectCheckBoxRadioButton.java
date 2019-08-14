@@ -15,11 +15,15 @@ public class ProjectCheckBoxRadioButton {
 		WebElement radio2 = driver.findElement(By.id("vfb-7-2"));
 		
 		radio1.click();
+		
 		System.out.println("Radio Button Option 1 Selected");
+		
 		radio2.click();
+		
 		System.out.println("Radio Button Option 2 Selected");
 		
 		WebElement option1 = driver.findElement(By.id("vfb-6-0"));
+		
 		option1.click();
 		
 		if (option1.isSelected() ) {

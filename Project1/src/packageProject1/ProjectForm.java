@@ -22,19 +22,23 @@ public class ProjectForm {
 		System.out.println("Text Field Set");
 		
 		email.clear();
+		
 		password.clear();
+		
 		System.out.println("Text Field Cleared");
 		
 		WebElement login = driver.findElement(By.id("SubmitLogin"));
 		email.sendKeys("abcd@gmail.com");
 		password.sendKeys("abcdefghlkjl");
 		login.click();
+		
 		System.out.println("Login Done with Click");
 		
 		driver.get(baseUrl);
 		driver.findElement(By.id("email")).sendKeys("abcd@gmail.com");							
         driver.findElement(By.name("passwd")).sendKeys("abcdefghlkjl");	
         driver.findElement(By.id("SubmitLogin")).submit();
+        
         System.out.println("Login Done with Submit");
         
         driver.close();

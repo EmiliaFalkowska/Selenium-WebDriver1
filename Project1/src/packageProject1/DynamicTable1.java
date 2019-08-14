@@ -14,6 +14,7 @@ public class DynamicTable1 {
     	System.setProperty("webdriver.chrome.driver", "C:\\Users\\emili\\Tools\\chromedriver.exe");
 		
     	wd= new ChromeDriver();
+    	
         wd.get("http://demo.guru99.com/test/web-table-element.php");         
        
         List col = wd.findElements(By.xpath(".//*[@id=\"leftcontainer\"]/table/thead/tr/th"));
@@ -21,6 +22,7 @@ public class DynamicTable1 {
         
         List rows = wd.findElements(By.xpath(".//*[@id='leftcontainer']/table/tbody/tr/td[1]")); 
         System.out.println("No of rows are: " + rows.size());
+        
         wd.close();
     }
 }

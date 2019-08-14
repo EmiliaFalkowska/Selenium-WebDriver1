@@ -16,7 +16,9 @@ public class ProjectTable2 {
 		String innerText = driver.findElement(By
 				.xpath("//table[@width=\"270\"]/tbody/tr[4]/td"))
 				.getText();
+		
 		System.out.println(innerText);
+		
 		driver.quit();
 
 	}

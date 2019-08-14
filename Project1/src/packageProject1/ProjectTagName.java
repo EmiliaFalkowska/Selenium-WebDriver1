@@ -16,6 +16,7 @@ public class ProjectTagName {
 		driver.get(baseUrl);
 		tagName = driver.findElement(By.id("email")).getTagName();
 		System.out.println(tagName);
+		
 		driver.close();
 		
 		System.exit(0);

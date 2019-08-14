@@ -19,6 +19,7 @@ public class ProjectPopUpWindow {
 		String MainWindow = driver.getWindowHandle();
 				
 		Set<String> s1=driver.getWindowHandles();
+		
 		Iterator<String> i1=s1.iterator();
 		
 		while(i1.hasNext())

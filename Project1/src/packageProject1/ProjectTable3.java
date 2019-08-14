@@ -20,7 +20,9 @@ public class ProjectTable3 {
 						+ "table/tbody/tr[2]/td[1]/"
 						+ "table[2]/tbody/tr[3]/td[2]/font"))
 				.getText();
+		
 		System.out.println(innerText);
+		
 		driver.quit();
 		
 		

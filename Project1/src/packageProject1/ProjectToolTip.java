@@ -22,6 +22,7 @@ public class ProjectToolTip {
 		if(actualTooltip.equals(expectedTooltip)) {
 			System.out.println("Test Case Passed");
 		}
+		
 		driver.close();
 		
 

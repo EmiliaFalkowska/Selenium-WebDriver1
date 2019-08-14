@@ -13,9 +13,12 @@ public class Table {
 		WebDriver driver = new ChromeDriver();
 
 		driver.get(baseUrl);
+		
 		String innerText = driver.findElement(
-			By.xpath("//table/tbody/tr[2]/td[2]")).getText(); 	
+			By.xpath("//table/tbody/tr[2]/td[2]")).getText();
+		
 	        System.out.println(innerText); 
+	        
 		driver.quit();
 		}
 	}

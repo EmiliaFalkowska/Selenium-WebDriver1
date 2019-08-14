@@ -13,6 +13,7 @@ public class ProjectSwitchToFrame {
 		driver.get("http://demo.guru99.com/selenium/deprecated.html");
 		driver.switchTo().frame("classFrame");
 		driver.findElement(By.linkText("Deprecated")).click();
+		
 		driver.close();
 
 	}

@@ -5,7 +5,6 @@ import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
 
-
 public class ProjectMoveToElement {
 
 	public static void main(String[] args) {
@@ -31,10 +30,11 @@ public class ProjectMoveToElement {
 		String bgColor = td_Home.getCssValue("background-color");
 		System.out.println("Before hover: " + bgColor);
 		mouseOverHome.perform();
+		
 		bgColor = td_Home.getCssValue("background-color");
 		System.out.println("After hover: " + bgColor);
-		driver.close();		
 		
+		driver.close();		
 		
 	}
 
